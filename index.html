@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.25.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- p tag  -->
+    <!-- for level two
+    <p id="p-tag">0</p>
+    <button onclick="btnClick()">Incrase</button> 
+    -->
+    <div class="flex justify-center items-center w-screen h-screen">
+        <div class="border w-3/6 h-3/6 ">
+            <div class="mt-12">
+                <div class="p-5 flex justify-center gap-2">
+                    <input id="name-input" type="text" placeholder="Name here" class="input input-bordered " />
+                    <button onclick="setBtn('name-input','name')" class="btn btn-primary">Sent Name</button>
+                    <button onclick="deleteBtn('name')" class="btn btn-primary">Delete Name</button>
+                </div>
+                <div class="p-5 flex justify-center gap-2">
+                    <input id="email-input" type="email" placeholder="Email here" class="input input-bordered " />
+                    <button onclick="setBtn('email-input','email')" class="btn btn-primary">Sent Email</button>
+                    <button onclick="deleteBtn('email')" class="btn btn-primary">Delete Email</button>
+                </div>
+                <div class="p-5 flex justify-center gap-2">
+                    <textarea  id="text-input" cols="24" class="textarea textarea-bordered " placeholder="Text Here"></textarea>
+                    <button onclick="setBtn('text-input','text')"  class="btn btn-primary">Sent Text</button>
+                    <button onclick="deleteBtn('text')" class="btn btn-primary">Delete Text</button>
+                </div>
+                <div class="flex justify-around ">
+                    <button onclick="resetBtn()" class="btn btn-primary ">Reset</button>
+                    <button onclick="sentBtn()" class="btn btn-primary ">Sent</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scrpits -->
+    <script src="./problems.js"></script>
+    <script src="./level.js"></script>
+    <script src="./level3.js"></script>
+</body>
+</html>
